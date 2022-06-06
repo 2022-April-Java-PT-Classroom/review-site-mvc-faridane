@@ -1,0 +1,14 @@
+
+.msgBox{
+  
+   margin-top: 30px;
+   margin-left: 10px;
+    background-color:rgb(224, 242, 170);
+    width:fit-content;
+}
+.formBox{
+    display: inline-block;
+    width: fit-content;
+    height: 200px;
+    background-color: rgb(177, 221, 239);
+}
