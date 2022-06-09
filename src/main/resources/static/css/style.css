@@ -12,3 +12,45 @@
     height: 200px;
     background-color: rgb(177, 221, 239);
 }
+img{
+    width: fit-content;
+    height: fit-content;
+}
+.category{
+    border: 2px solid;
+    margin: 10% 30% 10% 30%;
+    background-color: rgb(134, 194, 194);
+    position: relative;
+    text-align: center;
+}
+h1{
+    color: aliceblue;
+}
+
+h2{
+    color: rgb(137, 109, 75);
+}
+#home{
+    border: 2px solid;
+    margin: 10% 30% 10% 30%;
+    background-color: rgb(231, 237, 106);
+    position: relative;
+    text-align: center;
+    
+}
+#home h1{
+color: rgb(9, 118, 82);
+}
+.table{
+    background-color: rgb(194, 240, 240);
+    color: rgb(13, 86, 222);
+    padding: 20px 20px;
+}
+#tanz{
+    width: 700px;
+    height: 500px;
+}
+.wrapper h1{
+    color: darkcyan;
+}
+

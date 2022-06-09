@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Beach 2</title>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="beach">
+        <h3>Review about Nakupenda beach East Coast Africa</h3>
+        <table border="1" solid cellspacing="2" cellpadding="2">
+            <tr>
+                <th class="table">Content</th>
+                <th class="table">Image</th>
+            </tr>
+            <tr>
+                <td>1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque blanditiis, aut quae fuga id quis ut.
+                    Eligendi necessitatibus blanditiis officia, odio deleniti natus molestiae fugiat ex quod vel aliquam illum.
+                </td>
+
+                <td><img src="../../images/nakupenda_beach.jpg"
+                 th:attr="src=@{/images/nakupenda_beach.jpg}"/></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

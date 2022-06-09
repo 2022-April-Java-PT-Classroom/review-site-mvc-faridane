@@ -5,10 +5,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.wecancoeit.reviews.entity.Review;
 import org.wecancoeit.reviews.repository.ReviewRepository;
+
 
 @Controller
 public class ReviewController {
@@ -33,10 +33,37 @@ public class ReviewController {
         return "redirect:review";
     }
 
-    @GetMapping("/review/{id}")
-    public String showReviewById(Model model, @PathVariable Long id){
+
+    @GetMapping("/review/1")
+    public String showReview0(Model model){
+
         model.addAttribute("newreviews", new Review());
-        model.addAttribute("msglist", reviewRepository.findById(id).get().getId());
-        return "singleReviewPage";
+        model.addAttribute("msglist", reviewRepository.findAll());
+
+        return "reviewcategory";
+    }
+    @GetMapping("/review/Beach1")
+    public String showReview1(Model model){
+
+        model.addAttribute("newreviews", new Review());
+        model.addAttribute("msglist", reviewRepository.findAll());
+
+        return "reviewimage";
+    }
+    @GetMapping("/review/Beach2")
+    public String showReview2(Model model){
+
+        model.addAttribute("newreviews", new Review());
+        model.addAttribute("msglist", reviewRepository.findAll());
+
+        return "reviewimage2";
+    }
+    @GetMapping("/review/Beach3")
+    public String showReview3(Model model){
+
+        model.addAttribute("newreviews", new Review());
+        model.addAttribute("msglist", reviewRepository.findAll());
+
+        return "reviewimage3";
     }
 }
